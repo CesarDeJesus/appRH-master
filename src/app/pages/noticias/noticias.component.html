@@ -1,0 +1,73 @@
+<div class="container">
+  <div class="d-flex justify-content-end my-4">
+    <button type="button" class="btn btn-secondary botonoti" data-toggle="modal" data-target="#exampleModalCenter">
+      Nueva Noticia
+    </button>
+  </div>
+
+  <div class="table-responsive-sm">
+    <table class="table">
+      <thead>
+          
+        <tr class="table-primary">
+          <th scope="col">No.</th>
+          <th scope="col">Titulo</th>
+          <th scope="col">Texto</th>
+          <th scope="col">Fecha Publicación</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-success">
+          <th scope="row">1</th>
+          <td>Cambios</td>
+          <td>qfffff4ff4f</td>
+          <td>09/08/2018</td>
+          <button class="btn btn-info acciones" title="Editar"> <i class="far fa-edit"></i></button>
+          <button class="btn btn-danger acciones" title="Eliminar" >  <i class="far fa-trash-alt"></i></button>
+        </tr>
+       
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <h5 class="modal-title" id="exampleModalCenterTitle">Nueva Noticia</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="" method="post">
+          <div class="form-group">
+            <label for="Titulo">Titulo</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="Texto">Texto</label>
+            <textarea class="form-control" rows="3" maxlength="150"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="Imagen">Imagen</label>
+            <input type="file" class="form-control-file" accept=".jpg,.png">
+          </div>
+          <div class="form-group">
+            <label for="PDF">PDF</label>
+            <input type="file" class="form-control-file" accept=".pdf">
+          </div>
+          <div class="form-group d-flex justify-content-end">
+            <button type="submit" class="btn btn-outline-info mx-3">Guardar</button>
+            <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

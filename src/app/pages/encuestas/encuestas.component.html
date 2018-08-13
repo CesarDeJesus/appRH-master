@@ -1,0 +1,84 @@
+
+<div class="container">
+    <div class="d-flex justify-content-end my-4">
+      <button type="button" class="btn btn-secondary botonoti" data-toggle="modal" data-target="#exampleModalCenter">
+        Nueva Encuesta
+      </button>
+    </div>
+  
+    
+  <div class="table-responsive-sm">
+      <table class="table">
+        <thead>
+            
+          <tr class="table-primary">
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Fecha Inicio</th>
+              <th scope="col">Fecha Finalizacion</th>
+              <th scope="col"># Respuestas</th>
+              <th scope="col">Estatus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-success">
+              <th scope="row">1</th>
+              <td>Curso de Certificación</td>
+              <td>01/07/2018</td>
+              <td>09/08/2018</td>
+              <td>102</td>
+              <td>Cerrada <a href="#"> <i class="fas fa-chart-pie"></i></a></td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Nueva Encuesta</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post">
+              <div class="form-group">
+                <label for="Titulo">Nombre de La Encuesta</label>
+                <input type="text" class="form-control">
+              </div>
+             
+                <div class="form-group">
+                    <label for="pregunta">Pregunta</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-success">+</button>
+                        </div>
+                      </div>
+                </div>
+
+               <div class="form-group">
+                    <label for="repuesta">Respuesta</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-success">+</button>
+                        </div>
+                      </div>
+                </div>
+              
+              <div class="form-group d-flex justify-content-end">
+                <button type="submit" class="btn btn-outline-info mx-3">Guardar</button>
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,37 @@
+.wraper {
+    z-index: 100;
+    position: fixed;
+    left: 60px;
+    width: 280px;
+    height: 100%;
+    margin-left: -65px;
+    overflow-y: auto;
+    background: #20A69A;
+    padding-top: 15px;
+}
+.caja{
+    padding: 20px 0px;
+    border-bottom: 3px solid rgb(33, 150, 138);
+}
+.opciones{
+    color: #F1E2CB;
+    text-decoration: none;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+.opciones:hover{
+    color: rgb(89, 90, 90);
+}
+.margen{
+    margin-left: 5px;
+}
+.clasena{
+    
+}
+@media (max-width: 990px){
+.desaparece{
+    display: none;
+}
+}
+
+

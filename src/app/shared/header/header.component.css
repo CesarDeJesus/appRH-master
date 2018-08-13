@@ -1,0 +1,40 @@
+.menu{
+    background: #20A69A;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 80px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.nav{  
+    display: flex;
+}
+.nav span{
+    font-size: 25px;
+    text-transform:uppercase;
+     padding: 0px 10px;
+     letter-spacing: 2px;
+     color: #F1E2CB;
+}
+.nav span:hover{
+    color: rgb(104, 93, 93);   
+}
+.boton{
+display: none;
+}
+@media (max-width: 990px){
+    .boton{
+        background: #20A69A;
+        margin-left: 15px;
+        border-color: transparent;
+        display: block;
+    }
+    .boton a{
+        display: block;
+        background: rgb(213, 213, 213);
+        height: 2px;
+        width: 30px;
+        margin: 7px 0px;
+    }
+  
+}

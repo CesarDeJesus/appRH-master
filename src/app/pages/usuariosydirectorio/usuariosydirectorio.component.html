@@ -1,0 +1,108 @@
+
+<div class="container">
+    <div class="d-flex justify-content-end my-4">
+      <button type="button" class="btn btn-secondary botonoti" data-toggle="modal" data-target="#exampleModalCenter">
+        Nuevo Usuario
+      </button>
+    </div>
+  
+    <div class="table-responsive-sm">
+        <table class="table">
+          <thead>
+              
+            <tr class="table-primary">
+                <th scope="col">#</th>
+                <th scope="col">Nombre(s)</th>
+                <th scope="col">Apelido Paterno</th>
+                <th scope="col">Apellido Materno</th>
+                <th scope="col">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-success">
+                <th scope="row">1</th>
+                <td>Usuario</td>
+                <td>Prueba</td>
+                <td>Prueba</td>
+              <button class="btn btn-info acciones" title="Editar"> <i class="far fa-edit"></i></button>
+              <button class="btn btn-danger acciones" title="Eliminar" >  <i class="far fa-trash-alt"></i></button>
+            </tr>
+           
+          </tbody>
+        </table>
+      </div>
+  </div>
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Nuevo Usuario</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control">
+              </div>
+             
+              <div class="form-group">
+                <label for="apePat">Apellido Paterno</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="apeMat">Apellido Materno</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="area">Área</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="puesto">Puesto</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="tel">Telefono</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="correo">Correo electronico</label>
+                <input type="email" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="jefe">Jefe inmediato</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                  <label for="password">Contraseña Inicial</label>
+                  <input type="password" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Roles</label>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio1">Administrador</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">Usuario</label>
+                  </div>
+              </div>
+
+              
+              <div class="form-group d-flex justify-content-end">
+                <button type="submit" class="btn btn-outline-info mx-3">Guardar</button>
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>

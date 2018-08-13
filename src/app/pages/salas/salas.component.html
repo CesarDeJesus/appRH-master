@@ -1,0 +1,84 @@
+<div class="container">
+    <div class="d-flex justify-content-end my-4">
+      <button type="button" class="btn btn-secondary botonoti" data-toggle="modal" data-target="#exampleModalCenter">
+        Alta de Sala
+      </button>
+    </div>
+  
+    <div class="table-responsive-sm">
+        <table class="table">
+          <thead>
+              
+            <tr class="table-primary">
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Capacidad</th>
+                <th scope="col">Ubicación</th>
+                <th scope="col">Horario Apertura</th>
+                <th scope="col">Horario Cierra</th>
+                <th scope="col">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-success">
+                <th scope="row">1</th>
+                <td>Sala Innovación</td>
+                <td>100</td>
+                <td>Edificio Sur/ 2do Piso/ Cuadrante 1</td>
+                <td>9:00 am</td>
+                <td>6:00 pm</td>
+              <button class="btn btn-info acciones" title="Editar"> <i class="far fa-edit"></i></button>
+              <button class="btn btn-danger acciones" title="Eliminar" >  <i class="far fa-trash-alt"></i></button>
+              <button class="btn btn-secondary acciones"><i class="far fa-calendar"></i></button>
+            </tr>
+           
+          </tbody>
+        </table>
+      </div>
+  </div>
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Alta Sala</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="cap">Capacidad</label>
+                <input type="number" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="ubicacion">Ubicación</label>
+                <select name="" id="" class="form-control">
+                  <option value="1">Edificio Norte</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="cap">Horario Apertura</label>
+                  <input type="number" class="form-control">
+              </div>
+              <div class="form-group">
+                  <label for="cap">Horario Cierre</label>
+                    <input type="number" class="form-control">
+                </div>
+              
+              <div class="form-group d-flex justify-content-end">
+                <button type="submit" class="btn btn-outline-info mx-3">Guardar</button>
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
